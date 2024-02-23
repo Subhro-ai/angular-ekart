@@ -5,7 +5,17 @@
   "projects": {
     "angular-ekart": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -96,8 +106,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "2b1c0f2b-4cc0-4558-8a17-c0dcdddfee8a"
   }
 }
